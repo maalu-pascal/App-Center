@@ -143,6 +143,12 @@ android {
         }
     }
     signingConfigs {
+        release {
+            keyAlias 'keyAlias'
+            keyPassword 'qburst'
+            storeFile file('../keystores/appCenter-keystore.jks')
+            storePassword 'qburst'
+        }
         debug {
             storeFile file('debug.keystore')
             storePassword 'android'
